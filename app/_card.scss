@@ -1,4 +1,6 @@
 .card {
+  display: flex; 
+  align-items: center;
   background: $white;
   margin: auto;
   border-radius: 0.7rem;
