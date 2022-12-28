@@ -1,0 +1,61 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+@media (prefers-reduce-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  background-color: $cream;
+  color: $grayBlue;
+  line-height: 1.7;
+  font-size: 14px; 
+}
+
+h1, h2 {
+  font-family: "Fraunces";
+}
+
+h1 {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  color: $darkBlue;
+}
+
+h2 {
+  color: $green;
+}
+
+#og-price {
+  font-size: 0.875rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+  vertical-align: 20%;
+  color: $grayBlue;
+}
+
+// Desktop styles
+@media (min-width: 56.25em) {
+  body {
+    height: 100vh;
+    padding: 1.5rem;
+    margin-top: 5rem;
+  }
+}
